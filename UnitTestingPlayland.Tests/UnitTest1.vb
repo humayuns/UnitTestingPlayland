@@ -17,4 +17,18 @@ Imports Microsoft.VisualStudio.TestTools.UnitTesting
         Assert.IsTrue(c.AddInt(2, 2) = 4)
     End Sub
 
+    <TestMethod> Public Sub IGetObjectBack()
+        Dim c As New Code.Class1
+
+        Dim type As Type = c.GetObject().GetType()
+        Dim typeName As String = type.FullName
+
+  
+
+        Assert.IsTrue(TypeOf (c.GetObject()) Is Object)
+    End Sub
+
+
+
+
 End Class
