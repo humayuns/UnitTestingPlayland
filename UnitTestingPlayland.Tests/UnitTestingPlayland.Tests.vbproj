@@ -116,6 +116,16 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTestingPlayland.Code\UnitTestingPlayland.Code.vbproj">
+      <Project>{22e61260-b6d7-4cb0-be03-fe079500fa30}</Project>
+      <Name>UnitTestingPlayland.Code</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitTestingPlayland\UnitTestingPlayland.vbproj">
+      <Project>{8c7f5e8d-fd6b-4d0a-b9e2-f856cc3410f2}</Project>
+      <Name>UnitTestingPlayland</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
