@@ -6,6 +6,9 @@
         Return n1 + n2
     End Function
 
+    Public Function AddDbl(n1 As Double, n2 As Double) As Double
+        Return n1 + n2
+    End Function
 
     Public Function GetObject() As Object
         Return New Object
